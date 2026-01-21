@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+hospital.db
+venv/
+.env.*
+.idea/
+.vscode/
+alembic/versions/__pycache__/

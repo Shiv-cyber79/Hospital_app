@@ -40,9 +40,9 @@ def login(
     print(user)
 
     token = create_access_token({
-        "user_id": user.id,
-        "username": user.username,
-        "role": user.role
-    })
+    "sub": user.username,
+    "user_id": user.id,
+    "role": user.role
+})
 
     return {"access_token": token, "token_type": "bearer"}
